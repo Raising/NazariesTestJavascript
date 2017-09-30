@@ -3,12 +3,10 @@ let ROOT = __dirname+"\\";
 
 const WebResource =require(ROOT+'classes\\webResource.js');
 const TextParser =require(ROOT+'classes\\textParser.js');
-let plansAndPricingConfiguration = require(ROOT+'configuration\\textParserConfigurtations.js').plansAndPricing;
+let textParserConfigs = require(ROOT+'configuration\\textParserConfigurtations.js');
 
-let monitorWebResource = new WebResource({url:'https://www.port-monitor.com/plans-and-pricing'});
-let plansAndPricingParser = new TextParser({configuration: plansAndPricingConfiguration});
-
-
+let monitorWebResource = new WebResource({ url: 'https://www.port-monitor.com/plans-and-pricing' });
+let plansAndPricingParser = new TextParser({ configuration: textParserConfigs.plansAndPricing });
 
 monitorWebResource.fetch()
 .then((resource)=>{
