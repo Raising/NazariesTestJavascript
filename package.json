@@ -2,7 +2,7 @@
   "name": "NazariesTest_JS",
   "version": "1.0.0",
   "description": "",
-  "main": "retrieveMonitorPlans.js",
+  "main": "main.js",
   "scripts": {},
   "keywords": [],
   "author": "Ignacio Medina Castillo, ignacio.medina.castillo@gmail.com",
